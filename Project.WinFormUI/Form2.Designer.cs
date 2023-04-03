@@ -36,6 +36,7 @@
             this.btnList = new System.Windows.Forms.Button();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
+            this.cmbcategories = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // btnForm2
@@ -57,7 +58,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(47, 174);
+            this.btnDelete.Location = new System.Drawing.Point(47, 192);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 23);
             this.btnDelete.TabIndex = 13;
@@ -66,7 +67,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(47, 203);
+            this.btnUpdate.Location = new System.Drawing.Point(47, 232);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(110, 23);
             this.btnUpdate.TabIndex = 12;
@@ -75,7 +76,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(47, 145);
+            this.btnAdd.Location = new System.Drawing.Point(47, 163);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 23);
             this.btnAdd.TabIndex = 11;
@@ -84,11 +85,11 @@
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(47, 116);
+            this.btnList.Location = new System.Drawing.Point(47, 134);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(110, 23);
             this.btnList.TabIndex = 10;
-            this.btnList.Text = "List Categories";
+            this.btnList.Text = "List Products";
             this.btnList.UseVisualStyleBackColor = true;
             // 
             // txtDescription
@@ -107,11 +108,20 @@
             this.txtName.TabIndex = 8;
             this.txtName.Text = "Deneme";
             // 
+            // cmbcategories
+            // 
+            this.cmbcategories.FormattingEnabled = true;
+            this.cmbcategories.Location = new System.Drawing.Point(36, 98);
+            this.cmbcategories.Name = "cmbcategories";
+            this.cmbcategories.Size = new System.Drawing.Size(121, 21);
+            this.cmbcategories.TabIndex = 16;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbcategories);
             this.Controls.Add(this.btnForm2);
             this.Controls.Add(this.lstCategories);
             this.Controls.Add(this.btnDelete);
@@ -137,5 +147,6 @@
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.ComboBox cmbcategories;
     }
 }
