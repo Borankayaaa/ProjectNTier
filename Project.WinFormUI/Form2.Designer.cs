@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.btnForm2 = new System.Windows.Forms.Button();
-            this.lstCategories = new System.Windows.Forms.ListBox();
+            this.lstProducts = new System.Windows.Forms.ListBox();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnList = new System.Windows.Forms.Button();
-            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.cmbcategories = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -48,57 +48,61 @@
             this.btnForm2.Text = "Form2";
             this.btnForm2.UseVisualStyleBackColor = true;
             // 
-            // lstCategories
+            // lstProducts
             // 
-            this.lstCategories.FormattingEnabled = true;
-            this.lstCategories.Location = new System.Drawing.Point(225, 26);
-            this.lstCategories.Name = "lstCategories";
-            this.lstCategories.Size = new System.Drawing.Size(529, 199);
-            this.lstCategories.TabIndex = 14;
+            this.lstProducts.FormattingEnabled = true;
+            this.lstProducts.Location = new System.Drawing.Point(225, 26);
+            this.lstProducts.Name = "lstProducts";
+            this.lstProducts.Size = new System.Drawing.Size(529, 199);
+            this.lstProducts.TabIndex = 14;
+            this.lstProducts.Click += new System.EventHandler(this.lstProducts_Click);
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(47, 192);
+            this.btnDelete.Location = new System.Drawing.Point(47, 227);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(110, 23);
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(47, 232);
+            this.btnUpdate.Location = new System.Drawing.Point(47, 267);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(110, 23);
             this.btnUpdate.TabIndex = 12;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(47, 163);
+            this.btnAdd.Location = new System.Drawing.Point(47, 198);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(110, 23);
             this.btnAdd.TabIndex = 11;
-            this.btnAdd.Text = "Add Category";
+            this.btnAdd.Text = "Add Product";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnList
             // 
-            this.btnList.Location = new System.Drawing.Point(47, 134);
+            this.btnList.Location = new System.Drawing.Point(47, 169);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(110, 23);
             this.btnList.TabIndex = 10;
             this.btnList.Text = "List Products";
             this.btnList.UseVisualStyleBackColor = true;
             // 
-            // txtDescription
+            // txtPrice
             // 
-            this.txtDescription.Location = new System.Drawing.Point(47, 63);
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(110, 20);
-            this.txtDescription.TabIndex = 9;
-            this.txtDescription.Text = "Test Verisidir";
+            this.txtPrice.Location = new System.Drawing.Point(47, 63);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(110, 20);
+            this.txtPrice.TabIndex = 9;
+            this.txtPrice.Text = "Test Verisidir";
             // 
             // txtName
             // 
@@ -111,9 +115,9 @@
             // cmbcategories
             // 
             this.cmbcategories.FormattingEnabled = true;
-            this.cmbcategories.Location = new System.Drawing.Point(36, 98);
+            this.cmbcategories.Location = new System.Drawing.Point(47, 98);
             this.cmbcategories.Name = "cmbcategories";
-            this.cmbcategories.Size = new System.Drawing.Size(121, 21);
+            this.cmbcategories.Size = new System.Drawing.Size(110, 21);
             this.cmbcategories.TabIndex = 16;
             // 
             // Form2
@@ -123,15 +127,16 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cmbcategories);
             this.Controls.Add(this.btnForm2);
-            this.Controls.Add(this.lstCategories);
+            this.Controls.Add(this.lstProducts);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnList);
-            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtName);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,12 +145,12 @@
         #endregion
 
         private System.Windows.Forms.Button btnForm2;
-        private System.Windows.Forms.ListBox lstCategories;
+        private System.Windows.Forms.ListBox lstProducts;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnList;
-        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.ComboBox cmbcategories;
     }
